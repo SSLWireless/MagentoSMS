@@ -36,3 +36,7 @@ They want to send SMS at 5 places.The places are given bellow with magento event
 	Shipment ==sales_order_shipment_save_after Magento Event use
 	confirm and cancel/hold/unhold/processing/compelete  == sales_order_save_after Magento Event use
 	
+For More Information Visit:
+http://www.sslwireless.com/product&services.php?id=1
+
+	
