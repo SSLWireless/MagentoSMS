@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<config>
+    <modules>
+        <Sslw_Ismsstatuschange>
+            <version>0.0.1</version>
+        </Sslw_Ismsstatuschange>
+    </modules>
+    <global>
+        <models>
+            <sslwismsstatuschange>
+                <class>Ismsstatuschange_Model</class>
+            </sslwismsstatuschange>
+        </models>
+        <events>
+            <sales_order_save_after>
+                <observers>
+                    <Sslw_Ismsstatuschange_model_observer>
+                        <type>singleton</type>
+                        <class>Sslw_Ismsstatuschange_Model_Observer</class>
+                        <method>SendSmsOrderStatusChange</method>
+                    </Sslw_Ismsstatuschange_model_observer>
+                </observers>
+            </sales_order_save_after> 
+        </events>
+    </global>
+</config>
