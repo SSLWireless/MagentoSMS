@@ -1,5 +1,5 @@
 # MagentoSMS
-MagentoSMS NotificationModule by SSLWirireless ISMS API Module
+Magento SMS Notification Module by SSLWirireless ISMS API 
 
 ||=============================================================================================||
   MagentoSMS Notification Module for variuos Event by SSLWirireless ISMS API Module
