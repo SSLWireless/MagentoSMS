@@ -20,11 +20,12 @@ Step02: SSLWirireless ISMS API Credential as Follwing Location
 			$sid = "Stake Holder Name";	 
 		
 
-[For Developer:
+For Developer:
 They want to send SMS at 5 places.The places are given bellow with magento event as follow:
-		1)Registration ==> customer_register_success Magento Event use
-		2)Order place ==>sales_order_place_before Magento Event use
-		3)Delivery ==>Customer Will Handle Maually 
-		4)Shipment ==>sales_order_shipment_save_after Magento Event use
-		5)confirm and cancel/hold/unhold/processing/compelete  ==> sales_order_save_after Magento Event use
-		]
+
+	Registration ==customer_register_success Magento Event use
+	Order place ==sales_order_place_before Magento Event use
+	Delivery ==Customer Will Handle Maually 
+	Shipment ==sales_order_shipment_save_after Magento Event use
+	confirm and cancel/hold/unhold/processing/compelete  == sales_order_save_after Magento Event use
+	
