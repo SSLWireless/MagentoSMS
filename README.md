@@ -5,7 +5,12 @@ Magento SMS Notification Module by SSLWirireless ISMS API
   MagentoSMS Notification Module for variuos Event by SSLWirireless ISMS API Module
 ||=============================================================================================||
 
-Instruction as follows
+Instruction as Following all module are same Step:
+ 01.Magento_SendIsmsRegister
+ 02.Magento_SendIsmsOrderPlace
+ 03.Magento_SendIsmsStatusChange
+ 04.Magento_SendIsmsShipment
+
 
 Step01:
  Copy/Upload Module Inner App directory  to Magento Site root folder.
