@@ -14,7 +14,7 @@ class Sslw_Ismsregister_Model_Observer {
                  
     		//START SMS API Code here your code
 			//$msisdn2='0171767xxxx'; // Store Admin Mobile No
-			$sms = 'Congrats! You have successfully Register. Thank You.@KHIKSHA';	//May Change SMS Body here			
+			$sms = 'Congrats! You have successfully Register. Thank You.@SSLW';	//May Change SMS Body here			
 			$user ="UserID";
 			$pass = "UserPassword"; //if change login password isms.sslwireless.com then change new here
 			$sid = "StakeHolderName";	 	//Stake Holder Name here 	 	
