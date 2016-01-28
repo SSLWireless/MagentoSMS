@@ -36,6 +36,11 @@ They want to send SMS at 5 places.The places are given bellow with magento event
 	Shipment ==sales_order_shipment_save_after Magento Event use
 	confirm and cancel/hold/unhold/processing/compelete  == sales_order_save_after Magento Event use
 	
+Ref Site:
+
+	https://www.nicksays.co.uk/magento-events-cheat-sheet-1-9/
+	https://docs.magentocommerce.com/Mage_Sales/Mage_Sales_Model_Order_Shipment.html
+	
 For More Information Visit:
 
 	Mail US:integration@sslcommerz.com.bd
