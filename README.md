@@ -42,6 +42,7 @@ They want to send SMS at 5 places.The places are given bellow with magento event
 Ref Site:
 
 	https://www.nicksays.co.uk/magento-events-cheat-sheet-1-9/
+	http://rabee.me/2014/06/06/Magento-Events-Cheat-Sheet-1-9/
 	https://docs.magentocommerce.com/Mage_Sales/Mage_Sales_Model_Order_Shipment.html
 	
 For More Information Visit:
