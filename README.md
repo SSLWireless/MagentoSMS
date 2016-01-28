@@ -31,10 +31,13 @@ For Developer:
 They want to send SMS at 5 places.The places are given bellow with magento event as follow:
 
 	Registration ==customer_register_success Magento Event use
+		[/app/code/core/Mage/Customer/controllers/AccountController.php	customer_register_success]
 	Order place ==sales_order_place_before Magento Event use
 	Delivery ==Customer Will Handle Maually 
 	Shipment ==sales_order_shipment_save_after Magento Event use
 	confirm and cancel/hold/unhold/processing/compelete  == sales_order_save_after Magento Event use
+	
+	
 	
 Ref Site:
 
