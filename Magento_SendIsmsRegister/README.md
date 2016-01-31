@@ -4,7 +4,10 @@
 Only Checkout time Registration SMS
 
 app\design\frontend\rwd or base or yourTheme Package \yourThemeName\template\checkout\success.phtml
-just add following code:
+Download  & replace success.phtml
+https://github.com/SSLWireless/MagentoSMS/blob/master/Magento_SendIsmsRegister/success.phtml
+
+or just add following code on success.phtml page:
 
 
 //Start New Customer Registration SMS Here 			
