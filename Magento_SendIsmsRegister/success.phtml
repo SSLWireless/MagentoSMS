@@ -95,7 +95,7 @@ if($val_id!='' ){ # IF VALID RESPONSE - SUCCESS
 	$val_id=urlencode($_POST['val_id']);
 	$store_id=urlencode("testbox");
 	$store_passwd=urlencode("qwerty");
-	$requested_url = ("https://www.sslcommerz.com.bd/validator/api/testbox/validationserverAPI.php?val_id=".$val_id."&Store_Id=".$store_id."&Store_Passwd=".$store_passwd."&v=1&format=json");
+	$requested_url = ("https://securepay.sslcommerz.com/validator/api/testbox/validationserverAPI.php?val_id=".$val_id."&Store_Id=".$store_id."&Store_Passwd=".$store_passwd."&v=1&format=json");
 
 	$handle = curl_init();
 	curl_setopt($handle, CURLOPT_URL, $requested_url);
