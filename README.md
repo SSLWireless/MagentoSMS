@@ -38,7 +38,19 @@ They want to send SMS at 5 places.The places are given bellow with magento event
 	confirm and cancel/hold/unhold/processing/compelete  == sales_order_save_after Magento Event use
 	
 	
-	
+Help:
+Major Order Status are:
+    const STATE_NEW             = 'new';
+    const STATE_PENDING_PAYMENT = 'pending_payment';
+    const STATE_PROCESSING      = 'processing';
+    const STATE_COMPLETE        = 'complete';
+    const STATE_CLOSED          = 'closed';
+    const STATE_CANCELED        = 'canceled';
+    const STATE_HOLDED          = 'holded';
+    const STATE_PAYMENT_REVIEW  = 'payment_review';
+ 
+
+
 Ref Site:
 
 	https://www.nicksays.co.uk/magento-events-cheat-sheet-1-9/
