@@ -15,11 +15,12 @@ class Sslw_Ismsstatuschange_Model_Observer {
 		
 		$status = $observer->getEvent()->getOrder()->getStatus();
    		$state = $observer->getEvent()->getOrder()->getState();	
-
+		$paymethod =$observer->getEvent()->getOrder()->getPayment()->getMethodInstance()->getCode();
              
 		//START check status & generated SMS Code here your code
+		$sms='';
 		if(!empty($status))	{
-			if($status == 'pending'){ 
+		if(($status == 'pending') && (($paymethod=='cashondelivery') || ($paymethod=='checkmo'))){ 
 			 $sms = 'Your submitted order (#'.$orderID.') is now in Pending status. Thank You.@SSLW'; 
 			}
 			else if($status == 'processing'){
@@ -31,11 +32,14 @@ class Sslw_Ismsstatuschange_Model_Observer {
 			else {
 					exit();
 					}
+					
+					
 			// ALL Other status condition will be here..
 			
 			//START SMS API Code here your code
 			//$msisdn2='0171767xxxx'; // Store Admin Mobile No				
-			//$sms = 'Congrats! You have successfully Register. Thank You.@SSLW';	//May Change SMS Body here			
+			//$sms = 'Congrats! You have successfully Register. Thank You.@SSLW';	//May Change SMS Body here
+			if(!empty($sms)){				
 			$user ="UserID";
 			$pass = "UserPassword"; //if change login password isms.sslwireless.com then change new here
 			$sid = "StakeHolderName";	 	//Stake Holder Name here 	 	
@@ -58,6 +62,7 @@ class Sslw_Ismsstatuschange_Model_Observer {
 			$response = curl_exec($crl);
 			curl_close($crl);
 			//echo $response;
+			}//end sms body check 
 		   
 			//END SMS API Code here your code
 			} 	//End  status Code here your code
