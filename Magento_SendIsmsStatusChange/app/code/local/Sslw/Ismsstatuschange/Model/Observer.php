@@ -28,6 +28,9 @@ class Sslw_Ismsstatuschange_Model_Observer {
 			else if($status == 'complete'){
 				$sms = 'Your order (#'.$orderID.') is now on Delivery process. Soon you will receive your order.@SSLW';
 			}
+			else {
+					exit();
+					}
 			// ALL Other status condition will be here..
 			
 			//START SMS API Code here your code
