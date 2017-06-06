@@ -21,8 +21,8 @@ Step02: SSLWirireless ISMS API Credential as Follwing Location
 		app\code\local\Sslw\Ismsorderplace\Model\Observer.php
 		
 			$msisdn2='0171767xxxx'; // Store Admin Mobile No
-			$sms = 'Your OrderID #'.$incrementId.' & Grand Total# '.$grandTotal.' Thank You @KHIKSHA';//May Change SMS Body here				
-			$user ="Zero_Gravity"; [isms.sslwireless.com login user ]
+			$sms = 'Your OrderID #'.$incrementId.' & Grand Total# '.$grandTotal.' Thank You @SSLW';//May Change SMS Body here				
+			$user ="testuser"; [isms.sslwireless.com login user ]
 			Password: UserPassword [isms.sslwireless.com login Password]
 			$sid = "Stake Holder Name";	 
 		
