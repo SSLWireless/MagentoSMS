@@ -15,22 +15,23 @@ class Sslw_Ismsstatuschange_Model_Observer {
 		
 		$status = $observer->getEvent()->getOrder()->getStatus();
    		$state = $observer->getEvent()->getOrder()->getState();	
+		$grandTotal = $observer->getOrder()->getGrandTotal();
 		$paymethod =$observer->getEvent()->getOrder()->getPayment()->getMethodInstance()->getCode();
              
 		//START check status & generated SMS Code here your code
 		$sms='';
 		if(!empty($status))	{
 		if(($status == 'pending') && (($paymethod=='cashondelivery') || ($paymethod=='checkmo'))){ 
-			 $sms = 'Your submitted order (#'.$orderID.') is now in Pending status. Thank You.@SSLW'; 
+			 $sms = 'Your order (#'.$orderID.') is on pending. Soon you will receive your order. Thank you for purchasing from SSLW e-Shop'; 
 			}
-			else if($status == 'processing'){
-				$sms = 'Your invoice is generated. We are processing your order (#'.$orderID.'). Please keep patience.@SSLW';
+			else if(($status == 'processing') && (($paymethod!='cashondelivery') || ($paymethod!='checkmo'))){
+				$sms = 'Your payment BDT '.$grandTotal.' is received successfully for Order ID: #'.$orderID.'.@SSLW';
 			}
 			else if($status == 'complete'){
-				$sms = 'Your order (#'.$orderID.') is now on Delivery process. Soon you will receive your order.@SSLW';
+				$sms = 'Thank you for purchasing from SSLW e-Shop.Your order (#'.$orderID.') is delivered.Hope you have received your orders!';
 			}
 			else {
-					exit();
+				$sms='';
 					}
 					
 					
